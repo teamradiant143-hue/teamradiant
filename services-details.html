@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Service Details - Team Radiant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <nav>
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Team Radiant Logo" class="logo-img">
+                <span class="company-name">Team Radiant</span>
+            </div>
+            <button class="menu-toggle" aria-controls="nav-links" aria-expanded="false">
+                 <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="nav-links"> 
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="/services.html" class="active">Services</a></li> 
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="details-hero">
+            <img src="img/hero2.png" alt="Team Radiant Hero Image" class="hero-image">
+            <div class="hero-content">
+                <h1 id="service-title"></h1>
+            </div>
+        </section>
+
+        <section class="service-details">
+            <div class="details-container">
+                <div class="section-content">
+                    <p id="service-intro"></p>
+                </div>
+
+                <div class="details-section">
+                    <h2 class="section-subtitle">What We Offer</h2>
+                    <ul class="team-list"></ul>
+                </div>
+
+                <div class="details-section">
+                    <h2 class="section-subtitle">Our Process</h2>
+                    <div class="process-steps"></div>
+                </div>
+
+                <div class="cta-details">
+                    <h3>Ready to Plan Your Perfect Event?</h3>
+                    <a href="contact.html" class="cta-button">Contact Us Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/your-agency" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/your-agency" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com/your-agency" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; <span id="year"></span> Team Radiant. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

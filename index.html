@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Radiant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <nav>
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Team Radiant Logo" class="logo-img">
+                <span class="company-name">Team Radiant</span>
+            </div>
+            <button class="menu-toggle" aria-controls="nav-links" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="img/hero2.png" alt="A beautifully decorated event space" class="hero-image">
+            <div class="hero-content">
+                <h1>Crafting Unforgettable Experiences</h1>
+                <p>From dream weddings to corporate galas, we bring your vision to life with precision and passion.</p>
+                <a href="contact.html" class="cta-button">Plan Your Event</a>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <h2 class="section-title">Our Services</h2>
+            <div class="service-grid services-home-grid">
+                <div class="service-box">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Corporate Events</h3>
+                    <p>Flawless execution for conferences, product launches, and team-building retreats.</p>
+                    <a href="services-details.html?service=corporate" class="service-btn">Learn More</a>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-glass-cheers"></i>
+                    <h3>Weddings</h3>
+                    <p>Turning your special day into a timeless fairytale with bespoke planning and design.</p>
+                    <a href="services-details.html?service=weddings" class="service-btn">Learn More</a>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-music"></i>
+                    <h3>Festivals & Concerts</h3>
+                    <p>Expert logistics to create high-energy, memorable public events and gatherings.</p>
+                    <a href="services-details.html?service=festivals" class="service-btn">Learn More</a>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-birthday-cake"></i>
+                    <h3>Private Parties</h3>
+                    <p>From intimate dinners to grand celebrations, we handle every detail for your personal milestones.</p>
+                    <a href="services-details.html?service=parties" class="service-btn">Learn More</a>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-flag"></i>
+                    <h3>Theme Parties</h3>
+                    <p>We craft immersive and unique theme parties, from concept to execution.</p>
+                    <a href="services-details.html?service=theme-parties" class="service-btn">Learn More</a>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-building"></i>
+                    <h3>Venue Management</h3>
+                    <p>We find the perfect location and manage all aspects to create the ideal setting for your event.</p>
+                    <a href="services-details.html?service=venue" class="service-btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-slider-section">
+            <h2 class="section-title">Latest from Our Blog</h2>
+            <div class="blog-slider-container">
+                <div class="blog-slider" id="blog-slider">
+                    </div>
+                <div class="slider-nav">
+                    <button class="slider-btn prev-btn" aria-label="Previous Post"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-btn next-btn" aria-label="Next Post"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-us-section">
+            <div class="about-box">
+                <h2 class="section-title">About Team Radiant</h2>
+                <p class="section-description">
+                    At Team Radiant, we believe every event is a masterpiece waiting to be crafted. With years of experience and a passion for perfection, our team is dedicated to turning your vision into a breathtaking reality. We are committed to providing seamless, stress-free planning from concept to completion.
+                </p>
+                <a href="about.html" class="cta-button">Learn More</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/your-agency" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/your-agency" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com/your-agency" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; <span id="year"></span> Team Radiant. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

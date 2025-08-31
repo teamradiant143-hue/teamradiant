@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Team Radiant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <nav>
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Team Radiant Logo" class="logo-img">
+                <span class="company-name">Team Radiant</span>
+            </div>
+            <button class="menu-toggle" aria-controls="nav-links" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="nav-links"> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html" class="active">Services</a></li> 
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-description">We provide comprehensive event management solutions for a variety of occasions, ensuring every detail is perfectly managed.</p>
+        </section>
+
+        <section class="service-grid">
+            <div class="service-box">
+                <i class="fas fa-heart"></i>
+                <h3>Weddings & Social Events</h3>
+                <p>From intimate ceremonies to grand celebrations, we make your dream day a beautiful reality.</p>
+                <a href="services-details.html?service=weddings" class="service-btn">More Information</a>
+            </div>
+
+            <div class="service-box">
+                <i class="fas fa-briefcase"></i>
+                <h3>Corporate Events</h3>
+                <p>Professional planning for conferences, product launches, meetings, and team-building events.</p>
+                <a href="services-details.html?service=corporate" class="service-btn">More Information</a>
+            </div>
+
+            <div class="service-box">
+                <i class="fas fa-award"></i>
+                <h3>Exhibitions & Trade Shows</h3>
+                <p>Expert management to ensure your exhibition is a seamless, professional, and successful experience.</p>
+                <a href="services-details.html?service=exhibitions" class="service-btn">More Information</a>
+            </div>
+
+            <div class="service-box">
+                <i class="fas fa-guitar"></i>
+                <h3>Concerts & Festivals</h3>
+                <p>Managing logistics, stage setup, and crowd control for an unforgettable music event.</p>
+                <a href="services-details.html?service=concerts" class="service-btn">More Information</a>
+            </div>
+
+            <div class="service-box">
+                <i class="fas fa-basketball-ball"></i>
+                <h3>Sports Events & Tournaments</h3>
+                <p>Seamless coordination of tournaments, fan zones, and sporting championships for all levels.</p>
+                <a href="services-details.html?service=sports" class="service-btn">More Information</a>
+            </div>
+
+            <div class="service-box">
+                <i class="fas fa-glass-cheers"></i>
+                <h3>Private Parties</h3>
+                <p>Turning personal milestones into unforgettable memories with creative and flawless execution.</p>
+                <a href="services-details.html?service=parties" class="service-btn">More Information</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/your-agency" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/your-agency" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com/your-agency" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; <span id="year"></span> Team Radiant. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const yearSpan = document.getElementById('year');
+            if (yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
+        });
+    </script>
+    <script src="js/script.js"></script> </body>
+</html>

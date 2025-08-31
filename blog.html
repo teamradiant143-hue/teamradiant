@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Blog - Team Radiant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <nav>
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Team Radiant Logo" class="logo-img">
+                <span class="company-name">Team Radiant</span>
+            </div>
+            <button class="menu-toggle" aria-controls="nav-links" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="nav-links"> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li> 
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h2 class="section-title">Our Blog</h2>
+            <p class="section-description">
+                Stay up-to-date with the latest event trends, tips, and insights from Team Radiant.
+            </p>
+        </section>
+
+        <section class="blog-filters">
+            <div class="filter-box">
+                <ul id="category-list" class="filter-list">
+                    <li><a href="#" data-filter="all" class="active"><i class="fas fa-list-ul"></i> All Posts</a></li>
+                    <li><a href="#" data-filter="corporate"><i class="fas fa-handshake"></i> Corporate Events</a></li>
+                    <li><a href="#" data-filter="weddings"><i class="fas fa-glass-cheers"></i> Weddings</a></li>
+                    <li><a href="#" data-filter="festivals"><i class="fas fa-music"></i> Festivals & Concerts</a></li>
+                    <li><a href="#" data-filter="planning"><i class="fas fa-tasks"></i> Event Planning</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="blog-content">
+            <div class="blog-main-section">
+                <div class="blog-grid" id="blog-posts-container">
+                    
+                    <article class="blog-post" data-category="corporate">
+                        <div class="post-content">
+                            <div>
+                                <h3>The Future of Corporate Events</h3>
+                                <p class="post-meta">By **Team Radiant** | August 24, 2025</p>
+                                <p>Exploring how technology and sustainability are shaping the next generation of business gatherings and conferences. Get ready for a new era of interactive and eco-friendly events.</p>
+                            </div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    
+                    <article class="blog-post" data-category="weddings">
+                        <div class="post-content">
+                            <div>
+                                <h3>Top 5 Wedding Planning Tips</h3>
+                                <p class="post-meta">By **Team Radiant** | August 18, 2025</p>
+                                <p>Essential advice and insights to ensure your wedding planning process is stress-free and enjoyable, from budgeting to vendor selection. Make your big day perfect!</p>
+                            </div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-post" data-category="festivals">
+                        <div class="post-content">
+                            <div>
+                                <h3>Creating High-Energy Festivals</h3>
+                                <p class="post-meta">By **Team Radiant** | August 10, 2025</p>
+                                <p>How we manage logistics and design to produce unforgettable, high-energy festival experiences that captivate thousands of attendees. It's more than just music; it's an atmosphere.</p>
+                            </div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    
+                    <article class="blog-post" data-category="planning">
+                        <div class="post-content">
+                            <div>
+                                <h3>Your Guide to Seamless Event Management</h3>
+                                <p class="post-meta">By **Team Radiant** | August 5, 2025</p>
+                                <p>Learn the secrets of successful event managers, including key steps for pre-planning, execution, and post-event analysis. This guide is your one-stop resource.</p>
+                            </div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/your-agency" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/your-agency" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com/your-agency" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; <span id="year"></span> Team Radiant. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="js/script.js"></script> 
+</body>
+</html>
